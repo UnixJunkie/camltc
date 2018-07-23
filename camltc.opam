@@ -6,8 +6,6 @@ homepage: "http://github.com/toolslive/camltc"
 bug-reports: "http://github.com/toolslive/camltc/issues"
 dev-repo: "https://github.com/toolslive/camltc.git"
 build: [
-  ["git" "submodule" "init"]
-  ["git" "submodule" "update"]
   [make "-C" "src"]
 ]
 install: [make "-C" "src" "install"]
@@ -18,10 +16,6 @@ depends: [
   "lwt" {>= "3.2.0"}
   "logs"
   "ocamlbuild" {build}
-]
-depexts: [
-  [["debian"] ["git"]]
-  [["ubuntu"] ["git"]]
 ]
 available: [
   ocaml-version > "4.02.2" &
