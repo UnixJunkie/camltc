@@ -1,4 +1,0 @@
-[submodule "src/3rd-party/tokyocabinet"]
-	path = src/3rd-party/tokyocabinet
-	url = git://github.com/Incubaid/tokyocabinet.git
-	branch = arakoon
